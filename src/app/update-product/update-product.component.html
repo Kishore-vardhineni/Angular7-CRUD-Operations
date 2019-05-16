@@ -1,0 +1,19 @@
+<div>
+  <h2>Update Product</h2>
+  <p *ngIf="!exist">
+    Product Doesn't Exist
+ </p>
+  <form #updateProductForm="ngForm" (ngSubmit)="updateProduct(updateProductForm.value)">
+     <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" placeholder="name" name="name" [(ngModel)]="data.name" #name="ngModel" ngModel>
+     </div>
+     <div class="form-group">
+       <label for="color">Color</label>
+       <input type="text" class="form-control" placeholder="color" name="color" [(ngModel)]="data.color" #color="ngModel" ngModel>
+     </div>
+     <button type="submit">Update Product</button>
+  </form>
+</div>
+
+<h3 *ngIf="isAdded">{{confirmationMessage}}</h3>

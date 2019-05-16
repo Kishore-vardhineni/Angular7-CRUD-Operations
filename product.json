@@ -1,0 +1,19 @@
+{
+  "product": [
+    {
+      "name": "Laptop",
+      "color": "Pink",
+      "id": 1
+    },
+    {
+      "name": "Pot ",
+      "color": "Red",
+      "id": 2
+    },
+    {
+      "name": "Glass",
+      "color": "Yellow",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<div>
+  <a routerLink="/add-product">Add Product</a>
+  <table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Color</th>
+        <th colspan="2">Action</th>
+    </tr>
+    <tr *ngFor="let products of product">
+      <td>{{products.id}}</td>
+      <td>{{products.name}}</td>
+      <td>{{products.color}}</td>
+      <td><a [routerLink]="['/edit-product', products.id]" href="Update" >Update</a></td>
+      <td><a [routerLink]="['/delete-product', products.id]" href="Delete">Delete</a></td>
+    </tr>
+  </table>
+</div>
+
